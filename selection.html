@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection</title>
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    
+    <style>
+        table{
+            margin-left: 360px;
+            
+        }
+         h1{
+            font-size: 50px;
+            margin-left: 520px;
+        }
+        body{
+            background-color:lightgray;
+            font-family: 'Bangers', cursive; 
+        }
+        td {
+  /* padding: 1em;
+  padding-right: 1.5em; */
+  padding:20px;
+  
+}
+
+select,button,input{
+    font-family: 'Bangers', cursive; 
+    border-radius: 5px;
+}
+
+#button{
+    margin-left: 620px;
+}
+    </style>
+    <script src="selection.js"></script>
+</head>
+
+
+
+<body>
+    <h1 style="font-family: 'Bangers', cursive; ">BURGER MANIA</h1>
+    
+<!-- <li>
+    Crispy Supreme &nbsp; &nbsp;  
+    <label for="category"></label>
+    <select name="category" id="category"></select>
+    <option value="Veg">Veg</option>
+    <option value="Egg">Egg</option>
+    <option value="Chicken">Chicken</option>
+</li> -->
+<table id="table">
+    <tr>
+        <td>Crispy Supreme</td> &nbsp;  &nbsp;  &nbsp;
+        <td><img width="70px" height="70px" src="./images/csrispy.png" /></td>
+        <td >100</td>
+        <td><form >
+            <label for="category"></label>
+            <select id="category1" name="category" onchange="return dropDown(this.id);">
+              <option value="Veg">Veg</option>
+              <option value="Egg">Egg</option>
+              <option value="Chicken">Chicken</option>
+            </select>
+            
+          </form>
+        </td>
+        <td><form >
+            <input type="number" id="quantity1" name="quantity" min="1" max="5">
+            </form></td>
+        <td><button type="submit"  id="s1" value="Submit" onclick="return fuc(this.id);">Add To Cart</button></td>
+    </tr>
+<tr>
+    <td>Surprise</td> &nbsp;  &nbsp;  &nbsp;
+    <td><img width="70px" height="70px" src="./images/surprise.png" /></td>
+    <td >100</td>
+    <td><form >
+        <label for="category"></label>
+        <select id="category2" name="category" onchange="return dropDown(this.id);">
+          <option value="Veg">Veg</option>
+          <option value="Egg">Egg</option>
+          <option value="Chicken">Chicken</option>
+        </select>
+       
+      </form>
+    </td>
+    <td><form >
+        <input type="number" id="quantity2" name="quantity" min="1" max="5">
+        </form></td>
+    <td> <button type="submit"  id="s2" value="Submit" onclick="return fuc(this.id);">Add To Cart</button></td>
+</tr>
+<tr>
+    <td>Whopper</td>
+    <td><img width="70px" height="70px" src="./images/whopper.png" /></td><td >100</td>
+    <td><form >
+        <label for="category"></label>
+        <select id="category3" name="category" onchange="return dropDown(this.id);">
+          <option value="Veg">Veg</option>
+          <option value="Egg">Egg</option>
+          <option value="Chicken">Chicken</option>
+        </select>
+    
+      </form>
+    </td>
+    <td><form >
+        <input type="number" id="quantity3" name="quantity" min="1" max="5">
+        </form></td>
+    <td> <button type="submit"  value="Submit" id="s3" onclick="return fuc(this.id);">Add To Cart</button></td>
+</tr>
+<tr>
+    <td>Tandoori Grill</td>
+    <td><img width="70px" height="70px" src="./images/tandoori.png" /></td><td >100</td>
+    <td><form action="">
+        <label for="category"></label>
+        <select id="category4" name="category" onchange="return dropDown(this.id);">
+          <option value="Veg">Veg</option>
+          <option value="Egg">Egg</option>
+          <option value="Chicken">Chicken</option>
+        </select>
+      
+      </form>
+    </td>
+    <td><form >
+        <input type="number" id="quantity4" name="quantity" min="1" max="5">
+        </form></td>
+    <td> <button type="submit"  value="Submit"  id="s4" onclick="return fuc(this.id);">Add To Cart</button></td>
+</tr>
+
+
+
+</table>
+
+<form action="cart.html">
+    <button id="button" onclick=" return cartPage();">View Cart</button>
+</form>
+
+ 
+    
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <script src="cart.js"></script>
+    <style>
+
+        h1{
+            font-size: 50px;
+            margin-left: 520px;
+        }
+        body{
+            background-color:lightgray;
+            font-family: 'Bangers', cursive; 
+        }
+        table{
+            margin-left: 450px;
+            margin-top: 30px;
+        }
+        td ,th{
+  /* padding: 1em;
+  padding-right: 1.5em; */
+  padding:10px;
+  
+}
+#ans{
+    margin-left: 500px;
+}
+#mainhead{
+    text-align: center ;
+}
+#order{
+    margin-left: 590px;
+    margin-top: 40px;
+    font-family: 'Bangers', cursive; 
+    border-radius: 5px;
+}
+#result{
+    margin-top: 30px;
+    margin-left: 400px;
+}
+
+    </style>
+</head>
+
+<body >
+    <h1 style="font-family: 'Bangers', cursive; ">BURGER MANIA</h1>
+
+
+
+
+
+
+
+    <table id="myTable" >
+        <th colspan="5">My Cart Details</th>
+            <tr>
+                <td>Burger Name</td>
+                <td>Category</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Remove</td>
+
+
+            </tr>
+        
+       
+
+
+
+
+    </table> 
+<br> <br>
+<div id="ans">
+
+<p>Total Quantity   &nbsp; <span id="quantityPara"></span>     &nbsp; & Total Price Rs. 
+      &nbsp;  <span id="pricePara"></span>/</p>
+
+
+</div>
+
+
+    <button id="order" onclick=" return order();">Place Order</button>
+
+
+
+    <p id= "result"></p>
+</body>
+</html>
